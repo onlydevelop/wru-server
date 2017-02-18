@@ -1,0 +1,19 @@
+{
+  "name": "wru",
+  "version": "0.1.0",
+  "description": "Where are you app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "dependencies":{
+  	"express":"*",
+  	"body-parser":"*",
+  	"mongoose":"4.8.3",
+    "nodemon":"*",
+    "dateformat":"*"
+  },
+  "author": "Dipanjan Bhowmik",
+  "license": "ISC"
+}
