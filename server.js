@@ -81,7 +81,6 @@ app.post('/api/location/:sha1', (req, res) => {
 });
 
 // Used for testing cleanup only
-/*
 app.delete('/api/location/:sha1', (req, res) => {
 	var sha1 = req.params.sha1;
 	Location.removeLocation(sha1, (err, location) => {
@@ -91,7 +90,6 @@ app.delete('/api/location/:sha1', (req, res) => {
 		res.json(location);
 	});
 });
-*/
 
 app.get('/api/user/:sha1', (req, res) => {
 	var sha1 = req.params.sha1;
