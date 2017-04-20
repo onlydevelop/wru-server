@@ -142,6 +142,7 @@ app.delete('/api/user/:sha1', (req, res) => {
 	});
 });
 
-var port = process.env.PORT || PORT;
-app.listen(port);
-console.log('Running on port: ' + port);
+var server = app.listen(process.env.PORT || PORT, function () {
+   var port = server.address().port
+   console.log("Running on port: %s", port)
+})
