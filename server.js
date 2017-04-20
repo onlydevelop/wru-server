@@ -11,7 +11,11 @@ Location = require('./models/location');
 User = require('./models/user');
 
 // Connect to Mongoose
-mongoose.connect('mongodb://localhost/wru');
+//mongoose.connect('mongodb://localhost/wru');
+mongoose.connect('mongodb://'
+	+ process.env.DBUSER + ':'
+	+ process.env.DBPASSWORD + '@'
+	+ process.env.DBNAME);
 var db = mongoose.connection;
 
 app.get('/', (req, res) => {
