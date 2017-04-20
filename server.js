@@ -142,5 +142,6 @@ app.delete('/api/user/:sha1', (req, res) => {
 	});
 });
 
-app.listen(PORT);
-console.log('Running on port: ' + PORT);
+var port = process.env.PORT || PORT;
+app.listen(port);
+console.log('Running on port: ' + port);

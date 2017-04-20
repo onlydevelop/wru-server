@@ -1,0 +1,10 @@
+{
+  "name": "Node.js based REST Service",
+  "description": "A template for a Node.JS Express REST Service",
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "repository": "https://github.com/onlydevelop/wru-server.git",
+  "logo": "https://avatars2.githubusercontent.com/u/7297711?v=3&u=589eb8d7e11746c5d5b7d3c4264f48b57a1e407a&s=400"
+}
